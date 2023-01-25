@@ -87,10 +87,6 @@ a {
   font-weight: 600;
 }
 
-.about__list a:hover {
-  color: #000;
-}
-
 .navbar_lists {
   display: flex;
   font-family: sans-serif;
@@ -106,6 +102,10 @@ a {
   text-decoration: none;
   color: #444;
   font-size: 1.2rem;
+}
+
+.about__list a:hover {
+  color: #000;
 }
 
 .navbar_lists li a:hover {
