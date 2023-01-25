@@ -1,29 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import TodoContainer from './components/TodoContainer';
+import About from './pages/About';
+import SinglePage from './pages/SinglePage';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit
-          {' '}
-          <code>src/App.js</code>
-          {' '}
-          and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <>
+    <Navbar />
+    <Routes>
+      <Route path="/" element={<TodoContainer />} />
+      <Route path="/react-todo-app" element={<TodoContainer />} />
+      <Route path="/about">
+        <Route index element={<About />} />
+        <Route path=":slug" element={<SinglePage />} />
+      </Route>
+    </Routes>
+  </>
+);
 
 export default App;
