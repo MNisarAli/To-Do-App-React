@@ -48,7 +48,7 @@ The key features of this website include.
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](#-live-demo-)
+- [Live Demo Link](https://mnisarali.github.io/To-Do-App-React/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
